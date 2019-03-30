@@ -4,7 +4,7 @@ let merge = require('webpack-merge')
 let base = require('./webpack.base.js')
 module.exports = merge(base, {
     entry: {
-        client: path.resolve(__dirname, '../src/app.js')
+        client: path.resolve(__dirname, '../src/client-entry.js')
     },
     plugins: [
         new HtmlWebpackPlugin({

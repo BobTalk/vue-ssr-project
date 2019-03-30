@@ -6,10 +6,7 @@ Vue.config.productionTip = false
 export default () => {
     let router = createRouter();
     let app = new Vue({
-        el: '#app',
         router,
-        // components: { App },
-        // template: '<App/>'
         render: (h) => h(App)
     })
     return { app, router }

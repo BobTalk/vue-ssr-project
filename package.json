@@ -5,9 +5,9 @@
     "author": "软通动力-何永强 <yqheq@isoftstone.com>",
     "private": true,
     "scripts": {
-        "dev:client": "webpack-dev-server --inline --progress --config ./config/webpack.client.js",
+        "dev:client": "webpack-dev-server  --config ./config/webpack.client.js",
         "build:client": "webpack --config ./config/webpack.client.js",
-        "dev:server": "webpack-dev-server --inline --progress --config ./config/webpack.server.js",
+        "dev:server": "webpack-dev-server  --config ./config/webpack.server.js",
         "build:server": "webpack --config ./config/webpack.server.js"
     },
     "dependencies": {
