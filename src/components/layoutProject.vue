@@ -7,18 +7,12 @@
 </template>
 
 <script>
-import BarComp from './Bar.vue'
-import FooComp from './Foo.vue'
 export default {
     name: '',
     data() {
         return {
 
         }
-    },
-    components: {
-        BarComp,
-        FooComp
     }
 }
 </script>

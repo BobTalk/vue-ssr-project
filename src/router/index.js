@@ -8,15 +8,18 @@ export default () => {
         mode: 'history',
         routes: [{
             path: '/',
-            component: layoutProject
-        }, {
-            path: '/bar',
-            component: () =>
-                import ("../components/Bar.vue")
-        }, {
-            path: '/foo',
-            component: () =>
-                import ("../components/Foo.vue")
+            component:layoutProject,
+            children:[
+                {
+                    path: 'bar',
+                    component: () =>
+                        import ("../components/Bar.vue")
+                }, {
+                    path: 'foo',
+                    component: () =>
+                        import ("../components/Foo.vue")
+                }
+            ]
         }]
     })
     return router
